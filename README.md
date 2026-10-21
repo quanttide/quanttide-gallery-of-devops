@@ -2,26 +2,54 @@
 
 ## 定位
 
-研发流程的自动化与形式化：让规划、编码、构建、测试、发布、部署、运维、监控八阶段里的每一步都能被工具自动、可重复、可审计地完成。目录按阶段划分，成篇的完成记录与踩坑清单并存。
+研发流程的自动化与形式化：让规划、编码、构建、测试、发布、部署、运维、监控八阶段里的每一步都能被工具自动、可重复、可审计地完成。目录按阶段划分，阶段之内一个主题一个文件。
 
 ## 分类标准
 
-先归阶段，再看性质。归阶段：这条经验挡住的是哪一步，就落在哪一站。看性质：只收用来让流程自动、形式化的知识；判断产物本身对错的，归软件工程案例集。同一做法在多个阶段都成立（命令行语法、外部服务的通用调用），归跨阶段。
+先归阶段，再看主题。阶段回答「这条经验挡住的是哪一步」，主题回答「它讲的是哪一个对象」，文件名只写对象，不重复动作。成篇的完成记录写流程，未成篇的经验写「现象 → 做法」。
 
-## 阶段分布
+同一做法在多个阶段都成立（命令行语法、外部服务的通用调用），归跨阶段。
 
-| 阶段 | 文件 | 内容 |
-| :--- | :--- | :--- |
-| 规划 | — | 暂无 |
-| 编码 | `coding/pitfalls.md` | 版本控制、子模块与提交（15 条） |
-| 构建 | `build/pitfalls.md` | cargo、依赖源与文档构建（14 条） |
-| 测试 | `test/pitfalls.md` | 截图与验证环境（3 条） |
-| 发布 | — | 暂无 |
-| 部署 | `deploy/myst.md` | MyST 文档站点发布（流程案例） |
-| 部署 | `deploy/pitfalls.md` | 云 CLI、快照、镜像与 Terraform（4 条） |
-| 运维 | `ops/pitfalls.md` | 进程、服务与诊断（3 条） |
-| 监控 | — | 暂无 |
-| 跨阶段 | `tooling/pitfalls.md` | 命令行语法与外部服务调用（7 条） |
+## 目录
+
+### 编码
+
+- [push.md](coding/push.md)：推送与克隆。
+- [submodule.md](coding/submodule.md)：子模块。
+- [move.md](coding/move.md)：文件移动与改名。
+- [commit.md](coding/commit.md)：提交与锁。
+
+### 构建
+
+- [cargo.md](build/cargo.md)：cargo 与制品。
+- [flutter.md](build/flutter.md)：Flutter 构建产物。
+- [python.md](build/python.md)：Python 包管理。
+- [dependencies.md](build/dependencies.md)：依赖源。
+- [myst.md](build/myst.md)：MyST 写入。
+
+### 测试
+
+- [screenshot.md](test/screenshot.md)：截图与窗口注入。
+
+### 部署
+
+- [myst.md](deploy/myst.md)：MyST 文档站点发布，流程案例。
+- [aliyun.md](deploy/aliyun.md)：aliyun CLI。
+- [snap.md](deploy/snap.md)：snap。
+- [docker.md](deploy/docker.md)：docker。
+- [terraform.md](deploy/terraform.md)：Terraform。
+
+### 运维
+
+- [process.md](ops/process.md)：进程。
+- [service.md](ops/service.md)：服务挂起。
+- [profiling.md](ops/profiling.md)：Python 进程诊断。
+
+### 跨阶段
+
+- [shell.md](tooling/shell.md)：命令行。
+- [github-cli.md](tooling/github-cli.md)：GitHub CLI。
+- [lark-cli.md](tooling/lark-cli.md)：lark-cli。
 
 ## 关于空阶段
 
@@ -29,4 +57,4 @@
 
 ## 来源
 
-踩坑清单自 `quanttide-founder` 的案例集迁入，每条写「现象 → 做法」，不写论证；与代码、智能体两份同出 `data/profile/pi/pitfalls.md` 的 78 条汇总。
+踩坑清单自 `quanttide-founder` 的案例集迁入，共 46 条；与代码、智能体两份同出 `data/profile/pi/pitfalls.md` 的 78 条汇总。
