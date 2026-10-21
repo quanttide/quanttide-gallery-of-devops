@@ -2,13 +2,13 @@
 
 ## 定位
 
-研发流程的自动化与形式化：让规划、编码、构建、测试、发布、部署、运维、监控八阶段里的每一步都能被工具自动、可重复、可审计地完成。目录按阶段划分，阶段之内一个主题一个文件。
+研发流程的自动化与形式化：让规划、编码、构建、测试、发布、部署、运维、监控八阶段里的每一步都能被工具自动、可重复、可审计地完成。目录按阶段划分，另设平台一层收 DevOps 依赖的环境与服务；阶段之内一个主题一个文件。
 
 ## 分类标准
 
 先归阶段，再看主题。阶段回答「这条经验挡住的是哪一步」，主题回答「它讲的是哪一个对象」，文件名只写对象，不重复动作。成篇的完成记录写流程，未成篇的经验写「现象 → 做法」。
 
-同一做法在多个阶段都成立（命令行语法、外部服务的通用调用），归跨阶段。
+同一做法在多个阶段都成立、且属于流程所依赖的平台（shell、GitHub、飞书等），归平台。
 
 ## 目录
 
@@ -45,11 +45,13 @@
 - [service.md](ops/service.md)：服务挂起。
 - [profiling.md](ops/profiling.md)：Python 进程诊断。
 
-### 跨阶段
+### 平台
 
-- [shell.md](tooling/shell.md)：命令行。
-- [github-cli.md](tooling/github-cli.md)：GitHub CLI。
-- [lark-cli.md](tooling/lark-cli.md)：lark-cli。
+DevOps 依赖的平台，不对应单一阶段。
+
+- [shell.md](platform/shell.md)：命令行。
+- [github-cli.md](platform/github-cli.md)：GitHub CLI。
+- [lark-cli.md](platform/lark-cli.md)：lark-cli。
 
 ## 关于空阶段
 
