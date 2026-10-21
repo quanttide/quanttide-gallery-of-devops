@@ -6,7 +6,7 @@
 
 ## 分类标准
 
-先归阶段，再看主题。阶段回答「这条经验挡住的是哪一步」，主题回答「它讲的是哪一个对象」，文件名只写对象，不重复动作。成篇的完成记录写流程，未成篇的经验写「现象 → 做法」。
+先归阶段，再看主题。阶段回答「这条经验挡住的是哪一步」，主题回答「它讲的是哪一个对象」，文件名只写对象，不重复动作。所有条目都写成完整文章：流程性内容写成工作流，单点经验展开为「现象 → 原因 → 处理」。
 
 同一做法在多个阶段都成立、且属于流程所依赖的平台（shell、GitHub、飞书等），归平台。
 
@@ -14,10 +14,10 @@
 
 ### 编码
 
-- [push.md](coding/push.md)：推送与克隆。
-- [submodule.md](coding/submodule.md)：子模块。
-- [move.md](coding/move.md)：文件移动与改名。
-- [commit.md](coding/commit.md)：提交与锁。
+- [push.md](code/push.md)：推送与克隆。
+- [submodule.md](code/submodule.md)：子模块。
+- [move.md](code/move.md)：文件移动与改名。
+- [commit.md](code/commit.md)：提交与锁。
 
 ### 构建
 
@@ -41,9 +41,9 @@
 
 ### 运维
 
-- [process.md](ops/process.md)：进程。
-- [service.md](ops/service.md)：服务挂起。
-- [profiling.md](ops/profiling.md)：Python 进程诊断。
+- [process.md](operate/process.md)：进程。
+- [service.md](operate/service.md)：服务挂起。
+- [profiling.md](operate/profiling.md)：Python 进程诊断。
 
 ### 平台
 
